@@ -60,7 +60,7 @@ three times each with different inputs and print the results to the terminal.
 
 //Initializing Function
 function numStringsShorterThanLength(strings, length) {
-    count = 0; 
+    count = 0;  // count of the strings shorter than length
     for (var i = 0; i < strings.length; i ++){ // iterating through strings array
         if (strings[i].length < length) {   // checking to see if string in array 
             count += 1;                     // is shorter than length
@@ -82,5 +82,8 @@ console.log("Question 3");
 console.log("Test 1:", numStringsShorterThanLength(stringsOne, 3));
 console.log("Test 2:", numStringsShorterThanLength(stringsTwo, 7));
 console.log("Test 3:", numStringsShorterThanLength(stringsThree, 10));
+console.log(numStringsShorterThanLength(["abc", "def"], 4)); // 2
+console.log(numStringsShorterThanLength(["abc", "def"], 3)); // 0
+console.log(numStringsShorterThanLength(["abc", "def", "abcdef"], 4)); // 2
 console.log();
                                 
