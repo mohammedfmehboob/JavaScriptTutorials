@@ -62,7 +62,7 @@ function getCarsBetweenIds(idMin, idMax) {
     idArray = [];
     // Debugging if idmin is lower than max.
     if (idMin > idMax) {
-        // Setting up twmporary values.
+        // Setting up temporary values.
         idMintemp = idMin;
         idMaxtemp = idMax;
         // Creating the new instances.
